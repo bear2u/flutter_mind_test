@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'main_tab.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -10,6 +11,10 @@ class LoginScreen extends StatefulWidget {
 }
 
 class LoginState extends State<LoginScreen> {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  TextEditingController _idController = new TextEditingController();
+  TextEditingController _pwdController = new TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,13 +38,18 @@ class LoginState extends State<LoginScreen> {
                 child: Form(
               child: Column(
                 children: <Widget>[
-                  TextFormField(),
-                  TextFormField(),
+                  TextFormField(
+                    controller: _idController,
+                  ),
+                  TextFormField(
+                    controller: _pwdController,
+                  ),
                   RaisedButton(
                     child: Text('로그인'),
                     onPressed: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => MainTab()));
+                      loginProc();
+//                      Navigator.of(context).push(
+//                          MaterialPageRoute(builder: (context) => MainTab()));
                     },
                   )
                 ],
@@ -50,4 +60,14 @@ class LoginState extends State<LoginScreen> {
       ),
     );
   }
+
+  loginProc() async {
+    final user = (await _auth.signInWithEmailAndPassword(
+    email: _idController.text,
+    password: _pwdController.text,
+    ));
+
+    print(user);
+  }
+
 }

@@ -39,16 +39,8 @@ class _ProgrameScreenState extends State<ProgrameScreen> {
             children: <Widget>[
               Text('title'),
               new CustomIconWidget(
-                title: '홍길동',
+                '홍길동',
                 icon: Icons.home,
-              ),
-              new CustomIconWidget(
-                title: '홍길동2',
-                icon: Icons.people,
-              ),
-              new CustomIconWidget(
-                title: '홍길동3',
-                icon: Icons.network_cell,
               ),
             ],
           ),
@@ -62,9 +54,8 @@ class CustomIconWidget extends StatelessWidget {
   String title;
   IconData icon;
 
-  CustomIconWidget({
-    this.title,
-    this.icon,
+  CustomIconWidget(this.title,
+      { this.icon,
     Key key,
   }) : super(key: key);
 

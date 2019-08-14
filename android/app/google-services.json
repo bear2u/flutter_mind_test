@@ -1,0 +1,207 @@
+{
+  "project_info": {
+    "project_number": "408511652861",
+    "firebase_url": "https://fbtest-b758e.firebaseio.com",
+    "project_id": "fbtest-b758e",
+    "storage_bucket": "fbtest-b758e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408511652861:android:c1f0f09aa42eba16",
+        "android_client_info": {
+          "package_name": "com.google.firebase.example.fireeats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408511652861-4mc0lcv2q13uhb28rln4kv5hivhdc7sa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsbS7e1l7dLqssQ24D_4_5w3f9Rz6E7HQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408511652861-4mc0lcv2q13uhb28rln4kv5hivhdc7sa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "408511652861-dm0ljceqpuo1b8vdo6ho9in88dop67mj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.firebase.FriendlyEats"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408511652861:android:0d9dfb7015a5c5c9",
+        "android_client_info": {
+          "package_name": "com.google.samples.quickstart.admobexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408511652861-4mc0lcv2q13uhb28rln4kv5hivhdc7sa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsbS7e1l7dLqssQ24D_4_5w3f9Rz6E7HQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408511652861-4mc0lcv2q13uhb28rln4kv5hivhdc7sa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "408511652861-dm0ljceqpuo1b8vdo6ho9in88dop67mj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.firebase.FriendlyEats"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408511652861:android:4dadb78f87c3f892",
+        "android_client_info": {
+          "package_name": "kr.pe.firebasetestproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408511652861-3ljeqop7vpig6fja4ksu98hoavigsnlo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.pe.firebasetestproject",
+            "certificate_hash": "efe5c66070951d2e66508535c2497a5279b6c6ad"
+          }
+        },
+        {
+          "client_id": "408511652861-4mc0lcv2q13uhb28rln4kv5hivhdc7sa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsbS7e1l7dLqssQ24D_4_5w3f9Rz6E7HQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408511652861-4mc0lcv2q13uhb28rln4kv5hivhdc7sa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "408511652861-dm0ljceqpuo1b8vdo6ho9in88dop67mj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.firebase.FriendlyEats"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408511652861:android:4df75df80577612b",
+        "android_client_info": {
+          "package_name": "kth.pe.tddtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408511652861-osfkt25derr4tfo6leghfbhor995d1k8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kth.pe.tddtest",
+            "certificate_hash": "777070f648573800fedbf3c98ff28be7a79aa3eb"
+          }
+        },
+        {
+          "client_id": "408511652861-4mc0lcv2q13uhb28rln4kv5hivhdc7sa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsbS7e1l7dLqssQ24D_4_5w3f9Rz6E7HQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408511652861-4mc0lcv2q13uhb28rln4kv5hivhdc7sa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "408511652861-dm0ljceqpuo1b8vdo6ho9in88dop67mj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.firebase.FriendlyEats"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408511652861:android:80192dea73da3702",
+        "android_client_info": {
+          "package_name": "pe.kth.flutter_mind_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408511652861-4mc0lcv2q13uhb28rln4kv5hivhdc7sa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsbS7e1l7dLqssQ24D_4_5w3f9Rz6E7HQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408511652861-4mc0lcv2q13uhb28rln4kv5hivhdc7sa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "408511652861-dm0ljceqpuo1b8vdo6ho9in88dop67mj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.firebase.FriendlyEats"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
