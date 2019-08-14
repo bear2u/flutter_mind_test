@@ -14,10 +14,12 @@ class LoginState extends State<LoginScreen> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   TextEditingController _idController = new TextEditingController();
   TextEditingController _pwdController = new TextEditingController();
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       body: Column(
         children: <Widget>[
           Expanded(
@@ -70,11 +72,11 @@ class LoginState extends State<LoginScreen> {
           MaterialPageRoute(builder: (context) => MainTab()));
 
     } catch (e) {
-//      final snackBar = SnackBar(content: Text('Yay! A SnackBar!'));
-//
-//// Find the Scaffold in the widget tree and use it to show a SnackBar.
-//      Scaffold.of(context).showSnackBar(snackBar);
-      print('login error');
+      _scaffoldKey.currentState.showSnackBar(
+          SnackBar(
+            content: Text('Login Error'),
+            duration: Duration(seconds: 1),
+          ));
     }
 //
 //    if(user != null) {
