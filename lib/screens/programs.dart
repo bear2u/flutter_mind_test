@@ -38,11 +38,44 @@ class _ProgrameScreenState extends State<ProgrameScreen> {
           child: Column(
             children: <Widget>[
               Text('title'),
-              Text('name')
+              new CustomIconWidget(
+                title: '홍길동',
+                icon: Icons.home,
+              ),
+              new CustomIconWidget(
+                title: '홍길동2',
+                icon: Icons.people,
+              ),
+              new CustomIconWidget(
+                title: '홍길동3',
+                icon: Icons.network_cell,
+              ),
             ],
           ),
         )
       ],
     ),
   );
+}
+
+class CustomIconWidget extends StatelessWidget {
+  String title;
+  IconData icon;
+
+  CustomIconWidget({
+    this.title,
+    this.icon,
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Icon(icon),
+        Text(title)
+      ],
+    );
+  }
 }
