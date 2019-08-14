@@ -9,7 +9,40 @@ class _ProgrameScreenState extends State<ProgrameScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(),
+      body: SafeArea(
+        child: Column(
+          children: <Widget>[
+            Text('원하는 프로그램을 찾아 신청하세요 !'),
+            GridView.count(
+              crossAxisCount: 2,
+              shrinkWrap: true,
+              children: <Widget>[
+                getItemView(),
+                getItemView(),
+                getItemView(),
+                getItemView()
+              ],
+            )
+          ],
+        ),
+      ),
     );
   }
+
+  getItemView() => Container(
+    padding: EdgeInsets.all(8.0),
+    child: Column(
+      children: <Widget>[
+        Image.network("https://cdn2.iconfinder.com/data/icons/business-management-52/96/Artboard_20-512.png", width: 50.0, height: 50.0,),
+        Container(
+          child: Column(
+            children: <Widget>[
+              Text('title'),
+              Text('name')
+            ],
+          ),
+        )
+      ],
+    ),
+  );
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'guide.dart';
+import 'programs.dart';
 
 class MainTab extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class MainTabState extends State<MainTab> {
   final List<Widget> _children = [
     GuideScreen(),
     GuideScreen(),
-    GuideScreen(),
+    ProgrameScreen(),
     GuideScreen(),
   ];
 
@@ -34,7 +35,7 @@ class MainTabState extends State<MainTab> {
             type: BottomNavigationBarType.fixed,
             items: [
               BottomNavigationBarItem(
-                  icon: Icon(Icons.home), title: new Text('가이드')),
+                  icon: Image.network("https://img.icons8.com/material/4ac144/256/camera.png"), title: new Text('가이드')),
               BottomNavigationBarItem(
                   icon: Icon(Icons.home), title: new Text('심리상담')),
               BottomNavigationBarItem(
