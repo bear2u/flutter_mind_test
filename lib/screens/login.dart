@@ -47,9 +47,7 @@ class LoginState extends State<LoginScreen> {
                   RaisedButton(
                     child: Text('로그인'),
                     onPressed: () {
-                      loginProc();
-//                      Navigator.of(context).push(
-//                          MaterialPageRoute(builder: (context) => MainTab()));
+                      loginProc(context);
                     },
                   )
                 ],
@@ -61,13 +59,30 @@ class LoginState extends State<LoginScreen> {
     );
   }
 
-  loginProc() async {
-    final user = (await _auth.signInWithEmailAndPassword(
-    email: _idController.text,
-    password: _pwdController.text,
-    ));
+  loginProc(BuildContext context) async {
+    try {
+      final user = (await _auth.signInWithEmailAndPassword(
+        email: _idController.text,
+        password: _pwdController.text,
+      )).user;
 
-    print(user);
+      Navigator.of(context).push(
+          MaterialPageRoute(builder: (context) => MainTab()));
+
+    } catch (e) {
+//      final snackBar = SnackBar(content: Text('Yay! A SnackBar!'));
+//
+//// Find the Scaffold in the widget tree and use it to show a SnackBar.
+//      Scaffold.of(context).showSnackBar(snackBar);
+      print('login error');
+    }
+//
+//    if(user != null) {
+//
+//    } else {
+//
+//    }
+
   }
 
 }
